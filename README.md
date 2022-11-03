@@ -4,16 +4,16 @@
 
 ## Setup
 
-Install the package `@branchup/docusaurus-plugin-simple-analytics`:
+Install the package `docusaurus-plugin-simple-analytics`:
 
 ```
-npm install --save @branchup/docusaurus-plugin-simple-analytics
+npm install --save docusaurus-plugin-simple-analytics
 ```
 
 Or
 
 ```
-yarn add @branchup/docusaurus-plugin-simple-analytics
+yarn add docusaurus-plugin-simple-analytics
 ```
 
 Then, add the plugin to `docusaurus.config.js`:
@@ -21,7 +21,7 @@ Then, add the plugin to `docusaurus.config.js`:
 ```
 plugins: [
   ...
-  ['@branchup/docusaurus-plugin-simple-analytics', {}],
+  ['docusaurus-plugin-simple-analytics', {}],
   ...
 ],
 ```
@@ -35,7 +35,7 @@ plugins: [
 ```
 plugins: [
   ...
-  ['@branchup/docusaurus-plugin-simple-analytics', {
+  ['docusaurus-plugin-simple-analytics', {
     domain: 'custom.domain.com'
   }],
   ...
@@ -45,6 +45,10 @@ plugins: [
 ## Notes
 
 The plugin has no effect in development.
+
+## Special thanks
+
+Developed by https://www.branchup.tech (https://github.com/branchup).
 
 ## License
 
