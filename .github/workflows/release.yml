@@ -1,4 +1,4 @@
-name: Common NPM module CI
+name: Docusaurus NPM release
 
 on:
   push:
@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js
-        uses: actions/setup-node@master
+        uses: actions/setup-node@v3
         with:
-          node-version: '18.12'
-
+          node-version: 18
+    
       - uses: actions/checkout@v2
         with:
           persist-credentials: false
