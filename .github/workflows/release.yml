@@ -21,7 +21,7 @@ jobs:
           persist-credentials: false
 
       - name: NPM install
-        run: npm ci --audit=false --ignore-scripts
+        run: npm install --audit=false --ignore-scripts
 
       - name: Lint JavaScript with ESLint
         uses: a-b-r-o-w-n/eslint-action@v2.1.0
