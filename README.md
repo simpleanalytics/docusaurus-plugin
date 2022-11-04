@@ -7,13 +7,13 @@
 Install the package `docusaurus-plugin-simple-analytics`:
 
 ```
-npm install --save docusaurus-plugin-simple-analytics
+npm install docusaurus-plugin-simple-analytics@1.1.2 --save
 ```
 
 Or
 
 ```
-yarn add docusaurus-plugin-simple-analytics
+yarn add docusaurus-plugin-simple-analytics@1.1.2
 ```
 
 Then, add the plugin to `docusaurus.config.js`:
@@ -48,7 +48,7 @@ The plugin has no effect in development.
 
 ## Special thanks
 
-Developed by https://www.branchup.tech (https://github.com/branchup).
+Developed by [Frédéric Massart](https://github.com/FMCorz) from [branchup.tech](https://www.branchup.tech/?utm_source=github.com%2Fsimpleanalytics%2Fdocusaurus-plugin) ([@branchup](https://github.com/branchup)). 
 
 ## License
 
