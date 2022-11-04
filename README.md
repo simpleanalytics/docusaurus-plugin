@@ -1,6 +1,6 @@
 # Simple Analytics Docusaurus Plugin
 
-[Simple Analytics](https://simpleanalytics.com/) plugin for Docusaurus.
+[Simple Analytics](https://www.simpleanalytics.com/) plugin for Docusaurus. [See the documentation](https://docs.simpleanalytics.com/install-simple-analytics-with-docusaurus) at Simple Analytics.
 
 ## Setup
 
@@ -18,7 +18,7 @@ yarn add docusaurus-plugin-simple-analytics@1.1.2
 
 Then, add the plugin to `docusaurus.config.js`:
 
-```
+```js
 plugins: [
   ...
   ['docusaurus-plugin-simple-analytics', {}],
@@ -26,13 +26,13 @@ plugins: [
 ],
 ```
 
-## Options
+## Custom domain
 
-- The property `domain` lets you specify [your custom domain](https://docs.simpleanalytics.com/bypass-ad-blockers).
+The property `domain` lets you specify [your custom domain](https://docs.simpleanalytics.com/bypass-ad-blockers).
 
-**Example**
+Example:
 
-```
+```js
 plugins: [
   ...
   ['docusaurus-plugin-simple-analytics', {
