@@ -4,6 +4,10 @@
   "description": "Simple Analytics plugin for Docusaurus.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "!lib/.tsbuildinfo"
+  ],
   "keywords": [
     "docusaurus",
     "analytics"
