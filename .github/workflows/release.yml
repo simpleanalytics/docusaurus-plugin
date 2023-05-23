@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - master
 
 jobs:
   test:
@@ -69,19 +68,19 @@ jobs:
           commit_message: 'Version bump in README.md to ${{ steps.package.outputs.package_version }} [skip ci]'
           file_pattern: README.md
 
-      - uses: JS-DevTools/npm-publish@v1
+      - uses: JS-DevTools/npm-publish@v2.1.0
         id: publish
         with:
           token: ${{ secrets.NPM_TOKEN }}
-          check-version: true
+          strategy: all
           dry-run: false
           access: 'public'
 
-      - if: steps.publish.outputs.type != 'none'
+      - if: steps.publish.outputs.type
         run: |
           echo "Version changed: ${{ steps.publish.outputs.old-version }} => ${{ steps.publish.outputs.version }}"
       - name: Create new release
-        if: steps.publish.outputs.type != 'none'
+        if: steps.publish.outputs.type
         id: create_release
         uses: actions/create-release@v1
         env:
