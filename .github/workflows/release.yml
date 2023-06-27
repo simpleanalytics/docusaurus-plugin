@@ -78,10 +78,12 @@ jobs:
           strategy: all
           dry-run: false
           access: 'public'
+          ignore-scripts: false
 
       - if: steps.publish.outputs.type
         run: |
           echo "Version changed: ${{ steps.publish.outputs.old-version }} => ${{ steps.publish.outputs.version }}"
+
       - name: Create new release
         if: steps.publish.outputs.type
         id: create_release
