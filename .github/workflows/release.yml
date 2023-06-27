@@ -45,11 +45,11 @@ jobs:
           default: patch
           commit-message: 'Version bump to {{version}} [skip ci]'
           tag-prefix: 'v'
-
+        
       - name: Export package version
         id: package
         run: |
-          echo ::set-output name=package_version::`cat package.json | jq -r .version`
+          echo "package_version=`cat package.json | jq -r .version`" >> $GITHUB_OUTPUT
         shell: bash
 
       - run: echo ${{ steps.package.outputs.package_version }}
@@ -71,7 +71,7 @@ jobs:
       - name: NPM install
         run: npm install --audit=false
 
-      - uses: JS-DevTools/npm-publish@v2.1.0
+      - uses: JS-DevTools/npm-publish@v2.2.0
         id: publish
         with:
           token: ${{ secrets.NPM_TOKEN }}
