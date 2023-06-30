@@ -18,7 +18,7 @@
   "scripts": {
     "build": "tsc --build",
     "watch": "tsc --build --watch",
-    "postinstall": "npm run build"
+    "postinstall": "cd node_modules/docusaurus-plugin-simple-analytics && npm run build"
   },
   "repository": {
     "type": "git",
