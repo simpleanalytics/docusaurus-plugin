@@ -7,7 +7,7 @@
 Install the package `docusaurus-plugin-simple-analytics`:
 
 ```
-npm install docusaurus-plugin-simple-analytics@1.1.8
+npm install docusaurus-plugin-simple-analytics@1.1.9
 ```
 
 Then, add the plugin to `docusaurus.config.js`:
